@@ -64,6 +64,10 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "gitPages": {
+              "outputPath": "docs",
+              "baseHref":"https://ahmdfaizan.github.io/todo-webapp/"
             }
           },
           "defaultConfiguration": "production"
