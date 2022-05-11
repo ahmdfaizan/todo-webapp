@@ -2,7 +2,7 @@
 <div class="bg-secondary bg-opacity-10 rounded-3 p-3">
     <div class="d-flex align-items-center justify-content-between">
         <div [ngClass]="{'text-capitalize':true,'text-decoration-line-through':todo.active, 'text-muted':todo.active}">{{todo.desc}}</div>
-        <div><button class="btn btn-danger" (click)="onClick(todo)">Delete</button></div>
+        <div><button class="btn btn-danger" (click)="onClick(index)">Delete</button></div>
     </div>
     <hr class="ms-2 me-2">
     <div class="form-check text-secondary">
