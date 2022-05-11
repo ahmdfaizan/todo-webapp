@@ -16,19 +16,16 @@ export class TodosComponent implements OnInit {
     else{
     this.todos = [
     {
-    sno: 1,
     title: "one",
     desc: "description one",
     active: false,
     },
     {
-    sno: 2,
     title: "two",
     desc: "description two",
     active: false,
     },
     {
-    sno: 3,
     title: "three",
     desc: "description three",
     active: true,
