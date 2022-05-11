@@ -39,14 +39,12 @@ export class TodosComponent implements OnInit {
     this.todos.push(todo);
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
-  deleteTodo(todo: Todo) {
-    const index = this.todos.indexOf(todo);
+  deleteTodo(index: number) {
     this.todos.splice(index, 1);
     localStorage.setItem('todos', JSON.stringify(this.todos));
 
   }
   todoCheckBoxToggle(index: number){
-    console.log(this.todos[index].active)
     this.todos[index].active = !this.todos[index].active;
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }

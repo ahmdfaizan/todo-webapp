@@ -9,15 +9,15 @@ import { Todo } from 'src/app/Todo';
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
   @Input() index: number; 
-  @Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
+  @Output() todoDelete: EventEmitter<number> = new EventEmitter();
   @Output() todoCheckBoxToggle: EventEmitter<number> =new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   
   }
-  onClick(todo: Todo){
-    this.todoDelete.emit(todo);
+  onClick(index: number){
+    this.todoDelete.emit(index);
   }
   onCheckBoxClick(index: number){
     this.todoCheckBoxToggle.emit(index);
