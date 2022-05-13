@@ -1,7 +1,7 @@
 <div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" @dropIn>
     <div class="container-fluid">
-      <div (mouseup)="imgSrc = 'assets/images/owlWingsDown.png'" (mousedown)="imgSrc = 'assets/images/owlWingsUp.png'">
+      <div (mouseleave)="imgSrc = 'assets/images/owlWingsDown.png'" (mouseenter)="imgSrc = 'assets/images/owlWingsUp.png'">
         <img [src]="imgSrc" width="25" />
         <a class="navbar-brand" routerLink="/">(Ğ)To-Do</a>
       </div>
