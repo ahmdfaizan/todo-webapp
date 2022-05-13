@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { fade, listSideIn, sideInLeft, sideInRight } from 'src/app/animations';
 import { Todo } from 'src/app/Todo';
 
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+  styleUrls: ['./todos.component.css'],
+  animations: [fade, listSideIn, sideInLeft, sideInRight]
 })
 export class TodosComponent implements OnInit {
   todos: Todo[];
