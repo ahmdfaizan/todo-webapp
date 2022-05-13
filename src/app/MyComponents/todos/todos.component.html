@@ -1,6 +1,6 @@
 <div class="row justify-content-around">
     <div class="col-md-4 m-4">
-        <h1 @sideInLeft>Todo List</h1>
+        <h1 @sideInLeft>To-Do List</h1>
         <div *ngIf="this.todos.length===0;else elseBlock" class="bg-secondary bg-opacity-10 rounded-3 p-3" @sideInLeft>
             Nothing
             To Do!</div>
@@ -14,7 +14,7 @@
         </ng-template>
     </div>
     <div class="col-md-4 m-4 " @sideInRight>
-        <h1>Add Todo</h1>
+        <h1>Add To-Do</h1>
         <div class="bg-secondary bg-opacity-10 rounded-3 p-3 pt-4">
             <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
         </div>
