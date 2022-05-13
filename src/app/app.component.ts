@@ -9,4 +9,5 @@ import { dropIn } from './animations';
 })
 export class AppComponent {
   title = 'todo-webapp';
+  imgSrc = 'assets/images/owlWingsDown.png';
 }
