@@ -29,15 +29,15 @@ import {
           ]),
         ], { optional: true })
       ]),
-      // transition(':leave, :decrement',[
-      //   query('.card:leave', [
-      //     stagger(100, [
-      //       animate('500ms ease',
-      //         style({ opacity: 0,  transform: 'translateX(-500px)'})
-      //       ),
-      //     ]),
-      //   ],{ optional: true }),
-      // ])
+      transition(':decrement',[
+        query('.card:leave', [
+          stagger(100, [
+            animate('500ms ease',
+              style({ opacity: 0,  transform: 'translateX(-500px)'})
+            ),
+          ]),
+        ],{ optional: true }),
+      ])
     ])
     export let sideInLeft = trigger('sideInLeft',[
       transition(':enter', [
